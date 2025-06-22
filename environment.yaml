@@ -1,0 +1,19 @@
+name: ai_dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - langchain
+      - langchain_community
+      - langchain_ollama
+      - llama-index
+      - sentence-transformers
+      - chromadb
+      - fastapi
+      - uvicorn
+      - pydantic
+      - httpx
+      - ruff
+      - typer
