@@ -1,0 +1,105 @@
+name: ai-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - jupyter
+  - ipykernel
+  - pytest
+  - mypy
+  - black
+  - ruff
+  # CUDA/GPU Support
+  - cudatoolkit=12.1
+  - cudnn=8.9
+  - nvidia::cuda-nvcc
+  - pip:
+      # LangChain ecosystem
+      - langchain
+      - langchain-community
+      - langchain-openai
+      - langchain-anthropic
+      - langchain-google-genai
+      - langchain-experimental
+      - langgraph
+      
+      # LlamaIndex
+      - llama-index
+      - llama-index-core
+      - llama-index-readers-file
+      - llama-index-llms-anthropic
+      
+      # Vector stores
+      - chromadb
+      - pymilvus
+      - faiss-cpu
+      
+      # ML/AI tools
+      - sentence-transformers
+      - transformers
+      - torch>=2.0.0
+      - torchvision
+      - torchaudio
+      - openai
+      - anthropic
+      - google-generativeai
+      
+      # GPU/CUDA specific
+      - nvidia-ml-py
+      - gpustat
+      - py3nvml
+      - cupy-cuda12x
+      
+      # AutoGen
+      - pyautogen
+      
+      # Web frameworks
+      - fastapi
+      - uvicorn[standard]
+      - pydantic
+      - pydantic-settings
+      
+      # Utilities
+      - httpx
+      - aiohttp
+      - python-dotenv
+      - rich
+      - typer[all]
+      - watchdog
+      
+      # Development tools
+      - ipython
+      - jupyter
+      - notebook
+      - pylint
+      - autopep8
+      
+      # Testing
+      - pytest-asyncio
+      - pytest-cov
+      - pytest-mock
+      
+      # Type checking
+      - types-requests
+      - types-aiofiles
+      
+      # MCP (Model Context Protocol)
+      - mcp
+      - mcp-server-sqlite
+      - mcp-server-filesystem
+      - mcp-server-git
+      - mcp-server-github
+      - mcp-server-google-drive
+      - mcp-server-memory
+      - mcp-server-puppeteer
+      - mcp-server-slack
+      - mcp-server-postgres
+      - mcp-server-fetch
+      
+      # MCP Python SDK
+      - pymcp
+      - anthropic-mcp

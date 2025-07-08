@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "mcp-server-filesystem",
+      "args": ["--root", "/home/rich/dev", "--allow-write"],
+      "description": "File system access for development"
+    },
+    "git": {
+      "command": "mcp-server-git",
+      "args": [],
+      "description": "Git repository operations"
+    },
+    "github": {
+      "command": "mcp-server-github",
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "description": "GitHub API access"
+    },
+    "memory": {
+      "command": "mcp-server-memory",
+      "args": ["--db", "/home/rich/.mcp/memory.db"],
+      "description": "Persistent memory storage"
+    },
+    "fetch": {
+      "command": "mcp-server-fetch",
+      "args": ["--max-size", "10485760"],
+      "description": "Web content fetching"
+    },
+    "sqlite": {
+      "command": "mcp-server-sqlite",
+      "args": ["--db-path", "/home/rich/.mcp/databases"],
+      "description": "SQLite database access"
+    }
+  }
+}
