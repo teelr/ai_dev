@@ -8,7 +8,7 @@ The environment.yaml has been updated to include all necessary packages for your
 - **Python 3.11** (upgraded from 3.10)
 - **LangChain ecosystem** - Complete suite including experimental and langgraph
 - **Milvus support** - pymilvus for vector database
-- **AutoGen** - pyautogen for multi-agent systems
+- **AutoGen** - ag2 for multi-agent systems
 - **Google Gemini** - google-generativeai package
 - **Anthropic** - anthropic package for Claude API
 - **Development tools** - black, mypy, ruff, pylint

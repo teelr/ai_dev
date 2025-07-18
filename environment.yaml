@@ -55,7 +55,7 @@ dependencies:
       - cupy-cuda12x
       
       # AutoGen
-      - pyautogen
+      - ag2
       
       # Web frameworks
       - fastapi
